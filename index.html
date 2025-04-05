@@ -4,8 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Home Page</title>
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/risk.css">
+    <link rel="stylesheet" href="./styles/risk-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="/scripts/index.js" type="module"></script>
 </head>
 <body>
-    <h1>Hello world</h1>
+    <header id="main-header"></header>
+    <main id="main-content">
+        <div id="welcome-message">
+            <h2>Welcome to the Caries Risk Assessor</h2>
+            <p>Here you place you into one risk group <span id="low">"low"</span>, "medium", and <span id="high">"high"</span> based on a couple of factors.</p>
+            <p>Following the categorization we recommend preventive measures including yummy alternatives to sugars in high risk folks!</p>
+            <p>For the stat nerds, we offer you relevant caries data for different</p>
+        </div>
+
+        <div class="option-buttons">
+            <a href="./pages/assessrisk.html">Know your risk</a>
+            <a href="./pages/seeprevalence.html">Check prevalence data</a>
+        </div>
+    </main>
+    <footer id="main-footer"></footer>
 </body>
 </html>

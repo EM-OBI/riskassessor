@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/risk.css">
+    <link rel="stylesheet" href="../styles/risk-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../scripts/process-risk.js" type="module"></script>
+</head>
+<body>
+    <header id="main-header"></header>
+    <main id="main-content">
+        <h2>Assess Caries Risk</h2>
+        <form id="risk-form" method="get">
+            <label id="age-label">Age (in years):
+                <input type="number" name="age" required title="How old are you" id="age" min="6">
+            </label>
+            <p id="age-warning">Must be at least 6 years old</p>
+            
+            <fieldset>
+                <legend>Dietary Habits</legend>
+                <label>How will you rate your sugar consumption?: 
+                    <select name="diet" title="sugar consumption" required id="sugar">
+                      <option value="">Select an option</option>
+                      <option value="low">Low</option>
+                      <option value="moderate">Moderate</option>
+                      <option value="high">High</option>
+                    </select>
+                  </label>
+            </fieldset>
+          
+            <fieldset>
+              <legend>Oral Hygiene</legend>
+              <label>How often do you brush?:
+                <select name="brushing" required title="brushing habits" id="brush"> 
+                <option value="">Select an option</option>
+                  <option value="twice">Twice daily</option>
+                  <option value="once">Once daily</option>
+                  <option value="less">Less than once</option>
+                </select>
+              </label>
+              <label>How often do you floss between your teeth?:
+                <select name="flossing" required title="flossing habits" id="floss">
+                <option value="">Select an option</option>
+                  <option value="twice">Twice daily</option>
+                  <option value="once">Once daily</option>
+                  <option value="less">Less than once daily</option>
+                </select>
+              </label>
+            </fieldset>
+          
+            <fieldset>
+                <legend>Caries History</legend>
+                <label>Have you ever had a hole in your tooth(teeth)?:
+                    <select name="pastDecay" required title="caries history" id="history">
+                        <option value="">Select an option</option>
+                      <option value="yes">Yes</option>
+                      <option value="no">No</option>
+                    </select>
+                  </label>
+            </fieldset>
+          
+            <fieldset>
+              <legend>Fluoride Exposure</legend>
+              <label>Do you drink fluoridated water?
+                <select name="fluoridatedWater" required title="fluoride in water" id="fl-water">
+                    <option value="">Select an option</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+              </label>
+
+              <label>Does your toothpaste contain fluoride?
+                <select name="fluorideToothpaste" required title="fluoride in toothpaste" id="fl-brush">
+                    <option value="">Select an option</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+              </label>
+            </fieldset>
+          
+            <input type="submit" id="submit" value="Assess">
+          </form>
+    </main>
+    <footer id="main-footer"></footer>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "riskassessor",
+  "version": "1.0.0",
+  "description": "caries risk assessor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EM-OBI/riskassessor.git"
+  },
+  "author": "Godwin Bassey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EM-OBI/riskassessor/issues"
+  },
+  "homepage": "https://github.com/EM-OBI/riskassessor#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "eslint": "^9.23.0",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.3"
+  }
+}
