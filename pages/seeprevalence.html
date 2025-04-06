@@ -15,12 +15,12 @@
 </head>
 <body>
     <header id="main-header"></header>
-    <main id="main-content">
+    <main id="main-content" class="main-prevalence">
         <div id="prevalence-content">
             <h2>Check prevalence data</h2>
         </div>
         <form id="check-prevalence" action="get">
-            <label> Use the drop down to check the caries prevalence of any country
+            <label class="prev-dropdown"> Use the drop down to check the caries prevalence of any country
                 <select class="select-country">
                     <option value="">Choose a country</option>
                     <option value="AFG">Afghanistan</option>
@@ -274,8 +274,9 @@
                     <option value="ZWE">Zimbabwe</option>
                 </select>
             </label>
-            
+            <input type="submit" value="Check prevalence">
         </form>
+        <button>See prevalence data of current location</button>
     </main>
     <footer id="main-footer"></footer>
 </body>
