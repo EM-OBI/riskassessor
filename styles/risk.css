@@ -129,6 +129,11 @@ button#submit {
     margin: 0 auto;
 }
 
+.main-risk {
+    margin: 0 auto;
+    max-width: 500px;
+}
+
 .prev-dropdown {
     display: flex;
     flex-direction: column;

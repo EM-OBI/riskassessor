@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Check Prevalence</title>
-    <link rel="icon" href="./images/favicon.ico">
+    <link rel="icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/risk.css">
     <link rel="stylesheet" href="../styles/risk-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="/scripts/index.js" type="module"></script>
+    <script src="/scripts/caries.js" type="module"></script>
 </head>
 <body>
     <header id="main-header"></header>
@@ -21,7 +21,7 @@
         </div>
         <form id="check-prevalence" action="get">
             <label class="prev-dropdown"> Use the drop down to check the caries prevalence of any country
-                <select class="select-country">
+                <select class="select-country" name="country">
                     <option value="">Choose a country</option>
                     <option value="AFG">Afghanistan</option>
                     <option value="ALA">Åland Islands</option>
