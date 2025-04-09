@@ -29,4 +29,15 @@ function getAge() {
     return localStorage.getItem('age');
 }
 
-export {setStoredRisk, getStoredRisk, setFluorideLevel, getFluorideLevel, setSugarLevel, getSugarLevel, setAge, getAge}
+function setHygieneData(date, data) {
+    const key = `oralHygiene-${date}`;
+    localStorage.setItem(key, JSON.stringify(data));
+  }
+  
+function getHygieneData(date) {
+    const key = `oralHygiene-${date}`;
+    const raw = localStorage.getItem(key);
+    return raw ? JSON.parse(raw) : null;
+  }
+
+export {setStoredRisk, getStoredRisk, setFluorideLevel, getFluorideLevel, setSugarLevel, getSugarLevel, setAge, getAge, setHygieneData, getHygieneData}

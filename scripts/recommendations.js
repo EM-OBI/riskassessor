@@ -22,6 +22,7 @@ const triggerRecipeCall = document.getElementById("trigger-recipe");
 
 triggerRecipeCall.addEventListener("click", async () => {
     const recipes = await fetchRecipes();
+    triggerRecipeCall.classList.add("varnish")
     displayRecipes(recipes);
 })
 

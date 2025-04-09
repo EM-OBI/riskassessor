@@ -20,6 +20,7 @@ closeModalButton.classList.add("modal-close");
 
 //get recommendations button
 const getRecBtn = document.createElement("button");
+getRecBtn.classList.add("get-rec-btn");
 getRecBtn.textContent = "Get Recommendations";
 getRecBtn.addEventListener("click", () => {
   window.location.href = "recommendations.html";
@@ -42,8 +43,9 @@ modal.addEventListener("click", (event) => {
 
 // Append children
 modal.appendChild(modalContent);
-modal.appendChild(closeModalButton);
 modal.appendChild(getRecBtn);
+modal.appendChild(closeModalButton);
+
 
 closeModalButton.addEventListener("click", () => {
   modal.close();
