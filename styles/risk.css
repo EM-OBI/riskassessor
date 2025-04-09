@@ -69,12 +69,6 @@ body {
     width: 100%;
 }
 
-
-/* Footer */
-.copyright {
-    color: #8B0000;
-}
-
 /* Style welcome message */
 #welcome-message {
     padding: 1rem;
