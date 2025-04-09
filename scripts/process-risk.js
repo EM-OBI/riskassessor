@@ -1,5 +1,3 @@
-const base = "/riskassessor/"
-
 import { validate } from "./validation.mjs";
 import { initializeHeaderFooter } from "../utilities/headerfooter.mjs";
 import { RiskAssessment } from "./generate-risk.mjs";
@@ -25,7 +23,7 @@ const getRecBtn = document.createElement("button");
 getRecBtn.classList.add("get-rec-btn");
 getRecBtn.textContent = "Get Recommendations";
 getRecBtn.addEventListener("click", () => {
-  window.location.href = `${base}pages/recommendations.html`;
+  window.location.href = "/riskassessor/pages/recommendations.html";
 });
 
 
