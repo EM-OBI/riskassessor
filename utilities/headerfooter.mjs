@@ -1,5 +1,5 @@
 //collects base path for construction of url to get header and footer depending on where it's called
-const basePath = window.location.pathname.split("/").length > 2 ? "." : "";
+const basePath = `${window.location.origin}/riskassessor/`;
 
 
 // function to load header and footer partials
