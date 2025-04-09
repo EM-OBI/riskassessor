@@ -1,5 +1,5 @@
-// Collect base path to construct the correct URL for header and footer depending on current depth
-const basePath = window.location.pathname.split("/").length > 2 ? "../" : "";
+// Get absolute base path depending on hosting location (e.g., GitHub Pages)
+const basePath = `${window.location.origin}/riskassessor/`;
 
 // Function to load a partial (header or footer) into a container by ID
 export async function loadPartial(id, partialPath) {
@@ -17,7 +17,7 @@ export async function loadPartial(id, partialPath) {
   }
 }
 
-// Main function to initialize header and footer
+// Initialize header and footer by loading them from absolute URLs
 export function initializeHeaderFooter() {
   document.addEventListener("DOMContentLoaded", () => {
     loadPartial("main-header", `${basePath}partials/header.html`);
