@@ -72,7 +72,7 @@ body {
 
 /* Footer */
 .copyright {
-    color: red;
+    color: #8B0000;
 }
 
 /* Style welcome message */
@@ -86,7 +86,7 @@ span#low {
 }
 
 span#high {
-    color: red;
+    color: #8B0000;
 }
 
 /* Style buttons */
@@ -100,7 +100,7 @@ span#high {
 
 /* Style forms */
 .form-instruction {
-    color: red;
+    color: #8B0000;
 }
 
 #risk-form {
@@ -251,7 +251,7 @@ button#submit {
 }
 
 #age-warning {
-    color: red;
+    color: #8B0000;
     font-size: 0.7rem;
 }
 
