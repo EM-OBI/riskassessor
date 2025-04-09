@@ -1,10 +1,5 @@
 // To generate header and footer to avoid repition across all pages
 
-
-//collects base path for construction of url to get header and footer depending on where it's called
-// const basePath = window.location.pathname.split("/").length > 2 ? "../" : "./";
-
-
 // function to load header and footer partials
 export async function loadPartial(id, partialPath) {
   const container = document.getElementById(id);
